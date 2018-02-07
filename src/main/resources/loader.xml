@@ -7,7 +7,6 @@
     <context:annotation-config/>
     <context:component-scan base-package="swa"/>
 
-    <context:component-scan base-package="swa.mapper"/>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
@@ -39,7 +38,7 @@
     </bean>
     <bean id="mapperScaner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
-        <property name="basePackage" value="swa.mapper"/>
+        <property name="basePackage" value="swa.job.mapper"/>
     </bean>
 
 

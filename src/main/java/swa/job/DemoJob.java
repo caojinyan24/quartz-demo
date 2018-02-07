@@ -6,6 +6,7 @@ import org.quartz.JobExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import swa.job.mapper.JobMapper;
 import swa.quartz.QuartzJob;
 
 import javax.annotation.Resource;

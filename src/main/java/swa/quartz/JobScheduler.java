@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.stereotype.Component;
-import swa.job.JobMapper;
+import swa.job.mapper.JobMapper;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;

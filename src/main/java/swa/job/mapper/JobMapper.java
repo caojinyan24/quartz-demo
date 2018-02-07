@@ -1,7 +1,8 @@
-package swa.job;
+package swa.job.mapper;
 
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+import swa.job.Job;
 
 import java.util.List;
 
