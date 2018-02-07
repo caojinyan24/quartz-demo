@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="swa.job.JobMapper">
+    <insert id="insertData" parameterType="swa.job.Job" useGeneratedKeys="true" keyProperty="job.id">
+        insert into job
+        (
+        bean_name,method_name
+        )
+        VALUES
+       (#{job.beanName},#{job.methodName})
+    </insert>
+    <select id="selectDatas" resultType="swa.job.Job">
+        select bean_name as beanName,method_name as methodName,cron_param as cronParam from job
+    </select>
+    <select id="selectData" resultType="swa.job.Job">
+        select bean_name as beanName,method_name as methodName ,cron_param as cronParam from job
+        where bean_name=#{beanName} and method_name =#{methodName}
+    </select>
+</mapper>
