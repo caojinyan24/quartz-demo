@@ -15,7 +15,7 @@ import java.util.Date;
  * Created by jinyan on 2/2/18 11:08 AM.
  */
 @Component
-public class DemoJob extends swa.job.BaseJob implements JobInterface {
+public class DemoJob extends swa.job.BaseJob implements swa.job.JobInterface {
     private static final Logger logger = LoggerFactory.getLogger(DemoJob.class);
 
     @Resource
